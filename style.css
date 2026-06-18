@@ -68,14 +68,8 @@ body {
   margin-bottom: 10px;
 }
 /*About section*/
-.active-link::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
+.active-link {
+  color: #60a5fa !important;
 }
 .about__container {
   row-gap: 2rem;
@@ -94,6 +88,13 @@ body {
 #about-section {
   padding: 100px 20px;
   text-align: center;
+}
+.project-tile img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 
@@ -141,7 +142,22 @@ body {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+  background: #1e293b;
+}
+
+footer a {
+  color: #facc15;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer a:hover {
+  color: #60a5fa;
 }
 
 #profile-link {
